@@ -551,6 +551,8 @@ pub struct Limit {
     pub fast_mode_file_list_enabled: bool,
     #[env_config(name = "ZO_FAST_MODE_FILE_LIST_INTERVAL", default = 300)] // seconds
     pub fast_mode_file_list_interval: i64,
+    #[env_config(name = "ZO_ENTRY_PER_SCHEMA_VERSION_ENABLED", default = false)]
+    pub row_per_schema_version_enabled: bool,
 }
 
 #[derive(EnvConfig)]
