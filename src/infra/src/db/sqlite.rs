@@ -310,7 +310,7 @@ impl super::Db for SqliteDb {
                 )
             } else {
                 format!(
-                    r#"DELETE FROM meta WHERE module = '{}' AND key1 = '{}' AND key2 LIKE '{}%' AND key3 LIKE '{}%';"#,
+                    r#"DELETE FROM meta WHERE module = '{}' AND key1 = '{}' AND key2 LIKE '{}%' AND key3 = '{}';"#,
                     module, key1, key2, key3
                 )
             }
